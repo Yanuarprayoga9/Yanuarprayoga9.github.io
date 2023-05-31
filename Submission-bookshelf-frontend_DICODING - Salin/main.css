@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:#efeef6;
+}
+body{
+    background-image: linear-gradient( 0.3deg,  rgb(78, 15, 112) 0.9%, rgb(29, 5, 31) 88.6% );
+    background-size: cover;
+    color:aliceblue;
+}
+
+
+header h1{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #efeef6, #ffffff, rgb(188, 128, 245));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+main{
+    width:80%;
+    margin: auto;
+}
+main .input_section h2{
+    padding:30px;
+    text-align: center;
+}
+form input{
+    width:100%;
+    padding:8px;
+    border-radius: 5px;
+}
+.input{
+    padding: 10px;
+}
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid rgb(109, 7, 127);
+    border-radius: 10px;
+}
+#inputBookYear{
+    color: black;
+}
+.input_section > form > button {
+    color: rgb(243, 242, 242);
+    background-color: green;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 60%;
+    padding: 14px ;
+    cursor: pointer;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.input_section > form > button:hover{
+    background-color: rgb(156, 210, 156);
+    color: black;
+    font-weight: 600;
+}
+.input_section > form > .input_inline {
+    
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+}
+
+.input_section > form > .input_inline > label {
+    vertical-align: middle;
+    
+}
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(109, 7, 127);
+    margin-bottom: 70px;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+    border-radius: 10px;
+    color: rgb(17, 11, 11);
+}
+.trashBtn{
+    background-color: rgb(108, 9, 9);
+    padding: 8px;
+    color: #ffffff;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 5px;
+}
+.trashBtn:hover{
+    background-color: brown;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.item h2,h3{
+    padding: 10px;
+}
+.itemAction{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    
+}
+.repeatBtn,.Selesai{
+    background-color: rgb(9, 108, 35);
+    padding: 8px;
+    color: #ffffff;
+    border-radius: 7px;
+    border: none;
+    margin: 20px 5px;
+}
+ footer{
+    padding: 30px;
+    background-color: rgb(40, 2, 60);
+    
+ }
+ footer h2{
+    text-align: center;
+ }
