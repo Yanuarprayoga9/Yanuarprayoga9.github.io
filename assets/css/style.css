@@ -274,8 +274,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bghero.jpg") top right no-repeat rgba(0, 0,0, 0.6);
-  
+  background: url("../img/space-planets-4k-r2.jpg") top right no-repeat rgba(0, 0,0, 0.6);
   background-size: cover;
   position: relative;
 }
@@ -1224,6 +1223,16 @@ section {
  border: #067ded solid 2;
 
 }
+.yanuar{
+  font-size:70px;
+  color: #11dbcf;
+  font-weight: 900;
+  font-size: 90px;
+  letter-spacing:30px ;
+  font-family: 'Great Vibes', cursive;
+  
+  
+}
 
 @media screen and (min-width:900px) {
   .sosial{
@@ -1234,8 +1243,24 @@ section {
   
 }
 @media screen and (max-width:900px){
+  #hero{
+   background-position-x: left;
+  }
   .sosial{
    padding-top: 40px;
+   
     
   }
+  .yanuar{
+   font-size: 50px;
+   color: #11dbcf;
+   letter-spacing: 2px;
+
+  }
+}
+
+
+.latin>span{
+   text-shadow: rgb(4, 14, 19) 5px 3px 20px;
+
 }
