@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f2e5d0;
+}
+
+.wrapper {
+  border-radius: 50px 50px 0 0;
+  background-color: #f9f3ee;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 70%;
+}
+
+.grid-item-left {
+  margin: auto;
+}
+
+.page-header {
+  font-size: 50px;
+}
+.page-header-secondary {
+  font-size: 20px;
+}
+
+form {
+  padding: 20px;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.form-label {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.form-input {
+  width: 400px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.button-submit {
+  margin-left: 20px;
+  border: none;
+  border-radius: 30px;
+  width: 40%;
+  padding: 10px;
+  background-color: #f2e5d0;
+}
+
+.book-container {
+  width: 70%;
+  margin: 50px auto;
+  /* padding: 20px; */
+  /* background-color: #f9f3ee; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+#books div,
+#completed-books div {
+  border-radius: 5px;
+  background-color: #f2e5d0;
+  padding: 5px 20px;
+  margin: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#completed,
+#uncompleted {
+  border-radius: 0px 0px 20px 20px;
+  background-color: #f9f3ee;
+  padding: 20px;
+  margin: 5px;
+}
+
+#completed h1,
+#uncompleted h1 {
+  font-size: 20px;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/check-outline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url("../assets/check-solid.svg");
+  background-size: contain;
+}
+
+.trash-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/trash-outline.svg");
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url("../assets/trash-fill.svg");
+  background-size: contain;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(203, 209, 243, 0.7);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: none;
+  transition: 1s all !important;
+  transition-property: color !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 50%;
+}
+
+.modal-content button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#confirm-delete {
+  background-color: #f2e5d0;
+  margin: 0 20px 20px 0;
+}
+
+.modal-open {
+  transition: 1s all !important;
+  transition-property: color !important;
+  display: flex !important;
+}
