@@ -1233,14 +1233,15 @@ section {
   
   
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:768px){
   #hero{
   background-position-x: left;
   }
   .sosial{
   padding-top: 200px;
+  position: relative;
+  top: 120px;
   gap: 5px;
-  display: none;
   }
   .yanuar{
   font-size: 50px;
@@ -1249,11 +1250,10 @@ section {
   }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:768px) {
   .sosial{
     width:30%;
     margin-top: 30px;
-    
   }
   
 }
