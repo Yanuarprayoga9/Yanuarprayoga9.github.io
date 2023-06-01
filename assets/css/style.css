@@ -1217,12 +1217,12 @@ section {
 .mobile-nav-toggle{
   color:white;
 }
-.sosial{
+/* .sosial{
  padding-top: 20px;
  padding-bottom: 20px;
  border: #067ded solid 2;
 
-}
+} */
 .yanuar{
   font-size:70px;
   color: #11dbcf;
@@ -1233,6 +1233,21 @@ section {
   
   
 }
+@media screen and (max-width:900px){
+  #hero{
+  background-position-x: left;
+  }
+  .sosial{
+  padding-top: 200px;
+  gap: 5px;
+  display: none;
+  }
+  .yanuar{
+  font-size: 50px;
+  letter-spacing: 2px;
+
+  }
+}
 
 @media screen and (min-width:900px) {
   .sosial{
@@ -1241,22 +1256,6 @@ section {
     
   }
   
-}
-@media screen and (max-width:900px){
-  #hero{
-   background-position-x: left;
-  }
-  .sosial{
-   padding-top: 40px;
-   
-    
-  }
-  .yanuar{
-   font-size: 50px;
-   color: #11dbcf;
-   letter-spacing: 2px;
-
-  }
 }
 
 
